@@ -1,3 +1,4 @@
 .direnv
 .envrc
 .DS_store
+__pycache__
