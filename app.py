@@ -1,7 +1,9 @@
 from flask import Flask, render_template, flash, redirect, url_for, session, request, logging
+from flask_talisman import Talisman
 import os
 
 app = Flask(__name__)
+Talisman(app)
 port = int(os.environ.get('PORT', 5000))
 
 
