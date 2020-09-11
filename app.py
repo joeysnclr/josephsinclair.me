@@ -3,7 +3,7 @@ from flask_talisman import Talisman
 import os
 
 app = Flask(__name__)
-Talisman(app)
+Talisman(app, content_security_policy=None)
 port = int(os.environ.get('PORT', 5000))
 
 
